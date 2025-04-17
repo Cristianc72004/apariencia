@@ -35,9 +35,10 @@ class CustomHomepagePlugin extends GenericPlugin {
     }
 
     public function injectHomepage($hookName, $args) {
-        $templateMgr = $args[0];
+        $templateMgr =& $args[0]; // CORREGIDO: obtener referencia real al TemplateManager
         $templateMgr->assign('pluginPath', $this->getPluginPath());
         echo $templateMgr->fetch($this->getTemplateResource('homepage.tpl'));
         return true;
     }
+    
 }
