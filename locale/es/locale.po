@@ -1,0 +1,5 @@
+msgid "plugins.generic.customHomepage.displayName"
+msgstr "Portada Personalizada"
+
+msgid "plugins.generic.customHomepage.description"
+msgstr "Personaliza la portada de la revista con imagen de fondo, logotipos y botón de envío."
